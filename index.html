@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vampire Penguin Food Trailer Sign-Up</title>
+    <style>
+        body {
+            background-color: black;
+            color: orange;
+            font-family: 'Arial', sans-serif; /* Change to a spooky font if you have one, e.g., 'Creepster' from Google Fonts */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        form {
+            background-color: #111; /* Darker shade for form container */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5); /* Orange glow for vampire theme */
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4500; /* Brighter orange for header */
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #222;
+            border: 1px solid orange;
+            color: orange;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #ff8c00; /* Lighter orange for placeholders */
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: orange;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff4500; /* Darker orange on hover */
+        }
+        .branding {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .branding img {
+            max-width: 150px; /* Adjust logo size */
+            margin-bottom: 10px;
+        }
+        /* Add vampire-penguin theme elements: e.g., bat or penguin icons if you have URLs */
+        /* For example, add a background image or emoji in header */
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xyzjrvdk" method="POST">
+        <div class="branding">
+            <!-- Add your logo here: Upload an image (e.g., a vampire penguin illustration) to a free host like Imgur and paste the URL -->
+            <!-- <img src="https://your-logo-url.com/vampire-penguin.png" alt="Vampire Penguin Logo"> -->
+            <h1>Vampire Penguin Food Trailer Sign-Up</h1>
+            <p style="font-style: italic; color: #ff8c00;">Join our flock for chilling treats and updates! 🧛‍♂️🐧</p>
+        </div>
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Any questions or special requests?"></textarea>
+        
+        <button type="submit">Sign Up Now!</button>
+    </form>
+</body>
+</html>
